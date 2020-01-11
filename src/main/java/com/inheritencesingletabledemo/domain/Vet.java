@@ -3,7 +3,7 @@ package com.inheritencesingletabledemo.domain;
 import javax.persistence.*;
 
 @Entity
-@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@Inheritance(strategy = InheritanceType.JOINED)
 @DiscriminatorColumn(name = "vet_type")
 public abstract class Vet {
 
